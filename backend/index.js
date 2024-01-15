@@ -11,7 +11,8 @@ const friendRouter = require("./routes/friendRouter");
 // Cors config
 const cors = require("cors");
 const corsOptions = {
-	origin: "http://localhost:5173", // Replace with your frontend's URL
+	// origin: "http://localhost:5173",
+	origin: "https://social-media-1sol.onrender.com",
 	methods: "GET,PUT,POST,DELETE",
 	optionsSuccessStatus: 200, // Some legacy browsers choke on 204
 };

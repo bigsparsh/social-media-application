@@ -36,7 +36,8 @@ const app = express();
 // Cors config
 const cors = require("cors");
 const corsOptions = {
-	origin: "http://localhost:5173",
+	origin: "https://social-media-1sol.onrender.com",
+	// origin: "http://localhost:5173",
 	methods: "GET,PUT,POST,DELETE",
 	optionsSuccessStatus: 200,
 };
