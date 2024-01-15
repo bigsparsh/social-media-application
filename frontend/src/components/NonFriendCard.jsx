@@ -7,7 +7,8 @@ const NonFriendCard = ({ name, email, profile, id, update }) => {
 		const authToken = localStorage.getItem("authToken");
 		axios
 			.post(
-				"http://localhost:3000/friend/create",
+				// "http://localhost:3000/friend/create",
+				"https://social-media-1sol.onrender.com/friend/create",
 				{ friendId: id },
 				{
 					headers: {

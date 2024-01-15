@@ -9,18 +9,26 @@ const UserProfile = () => {
 	const [post, setPost] = useState([]);
 	useEffect(() => {
 		axios
-			.post("http://localhost:3000/user/profile", {
-				userId: userId,
-			})
+			.post(
+				// "http://localhost:3000/user/profile",
+				"https://social-media-1sol.onrender.com/user/profile",
+				{
+					userId: userId,
+				}
+			)
 			.then((res) => {
 				setUser(res.data.user);
 			});
 	}, []);
 	useEffect(() => {
 		axios
-			.post("http://localhost:3000/feed/profile", {
-				userId: userId,
-			})
+			.post(
+				// "http://localhost:3000/feed/profile",
+				"https://social-media-1sol.onrender.com/feed/profile",
+				{
+					userId: userId,
+				}
+			)
 			.then((res) => {
 				setPost(res.data.post);
 			});

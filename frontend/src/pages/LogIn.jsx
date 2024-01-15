@@ -16,7 +16,8 @@ const LogIn = () => {
 		}
 		axios
 			.post(
-				"http://localhost:3000/user/tokenlogin",
+				// "http://localhost:3000/user/tokenlogin",
+				"https://social-media-1sol.onrender.com/user/tokenlogin",
 				{},
 				{
 					headers: {
@@ -65,7 +66,11 @@ const LogIn = () => {
 			return;
 		}
 		axios
-			.post("http://localhost:3000/user/login", userData)
+			.post(
+				// "http://localhost:3000/user/login",
+				"https://social-media-1sol.onrender.com/user/login",
+				userData
+			)
 			.then((res) => {
 				setMsg({
 					response: {

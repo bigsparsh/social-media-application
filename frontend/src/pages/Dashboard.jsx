@@ -32,11 +32,16 @@ const Dashboard = () => {
 		const authToken = localStorage.getItem("authToken");
 		useEffect(() => {
 			axios
-				.post("http://localhost:3000/user/tokenlogin", null, {
-					headers: {
-						authToken: authToken,
-					},
-				})
+				.post(
+					// "http://localhost:3000/user/tokenlogin",
+					"https://social-media-1sol.onrender.com/user/tokenlogin",
+					null,
+					{
+						headers: {
+							authToken: authToken,
+						},
+					}
+				)
 				.then((res) => {})
 				.catch((err) => {
 					console.log(err);
@@ -44,11 +49,17 @@ const Dashboard = () => {
 		}, []);
 		useEffect(() => {
 			axios
-				.post("http://localhost:3000/user/getallfriend", null, {
-					headers: {
-						authToken: authToken,
-					},
-				})
+				.post(
+					// "http://localhost:3000/user/getallfriend",
+					"https://social-media-1sol.onrender.com/user/getallfriend",
+
+					null,
+					{
+						headers: {
+							authToken: authToken,
+						},
+					}
+				)
 				.then((res) => {
 					setNonFriendUsers(res.data.nonFriend);
 					setFriendUsers(res.data.friend);
@@ -60,11 +71,16 @@ const Dashboard = () => {
 
 		useEffect(() => {
 			axios
-				.post("http://localhost:3000/feed/getall", null, {
-					headers: {
-						authToken: authToken,
-					},
-				})
+				.post(
+					// "http://localhost:3000/feed/getall",
+					"https://social-media-1sol.onrender.com/feed/getall",
+					null,
+					{
+						headers: {
+							authToken: authToken,
+						},
+					}
+				)
 				.then((res) => {
 					setFeed(res.data.feed);
 					setPost(res.data.post);

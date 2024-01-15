@@ -40,7 +40,10 @@ const SignUp = () => {
 		formData.append("password", userData.password);
 		formData.append("profilePath", image.current.files[0]);
 		axios
-			.post("http://localhost:3000/user/signup", formData)
+			.post(
+				// "http://localhost:3000/user/signup", 
+				"https://social-media-1sol.onrender.com/user/signup",
+			formData)
 			.then((res) => {
 				setMsg({
 					response: {

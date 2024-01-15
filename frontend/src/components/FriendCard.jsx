@@ -7,7 +7,8 @@ const FriendCard = ({ name, email, profile, id, update }) => {
 		const authToken = localStorage.getItem("authToken");
 		axios
 			.post(
-				"http://localhost:3000/friend/delete",
+				// "http://localhost:3000/friend/delete",
+				"https://social-media-1sol.onrender.com/friend/delete",
 				{ friendId: id },
 				{
 					headers: {

@@ -12,11 +12,16 @@ const UploadPost = ({ update }) => {
 		formData.append("image", image.current.files[0]);
 
 		axios
-			.post("http://localhost:3000/feed/create", formData, {
-				headers: {
-					authToken: localStorage.getItem("authToken"),
-				},
-			})
+			.post(
+				// "http://localhost:3000/feed/create",
+				"https://social-media-1sol.onrender.com/feed/create",
+				formData,
+				{
+					headers: {
+						authToken: localStorage.getItem("authToken"),
+					},
+				}
+			)
 			.then((res) => {
 				update();
 			})
