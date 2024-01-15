@@ -41,8 +41,8 @@ const SignUp = () => {
 		formData.append("profilePath", image.current.files[0]);
 		axios
 			.post(
-				// "http://localhost:3000/user/signup",
-				"https://social-media-1sol.onrender.com/user/signup",
+				"http://localhost:3000/user/signup",
+				// "https://social-media-1sol.onrender.com/user/signup",
 				formData
 			)
 			.then((res) => {
@@ -58,8 +58,7 @@ const SignUp = () => {
 				localStorage.setItem("authToken", res.data.authToken);
 			})
 			.catch((err) => {
-				setMsg(err);
-				console.log(err.response.data.error);
+				console.log(err);
 			});
 	};
 	const closeDialog = () => {
