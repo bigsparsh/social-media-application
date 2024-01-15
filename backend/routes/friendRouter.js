@@ -37,15 +37,6 @@ const app = express();
 app.use(express.json());
 
 // Cors config
-const cors = require("cors");
-const corsOptions = {
-	// origin: "http://localhost:5173",
-	origin: "https://social-media-1sol.onrender.com",
-
-	methods: "GET,PUT,POST,DELETE",
-	optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
 
 router.post("/create", async (req, res) => {
 	const decodedUser = jwt.decode(req.headers.authtoken);

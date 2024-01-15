@@ -34,14 +34,6 @@ const express = require("express");
 const app = express();
 
 // Cors config
-const cors = require("cors");
-const corsOptions = {
-	origin: "https://social-media-1sol.onrender.com",
-	// origin: "http://localhost:5173",
-	methods: "GET,PUT,POST,DELETE",
-	optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
 
 router.post(
 	"/create",
