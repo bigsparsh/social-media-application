@@ -8,7 +8,8 @@ const FriendCard = ({ name, email, profile, id, update }) => {
 		axios
 			.post(
 				// "http://localhost:3000/friend/delete",
-				"https://social-media-1sol.onrender.com/friend/delete",
+				// "https://social-media-1sol.onrender.com/friend/delete",
+				"https://social-media-application-5dap.vercel.app/friend/delete",
 				{ friendId: id },
 				{
 					headers: {

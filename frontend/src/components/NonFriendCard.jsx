@@ -8,7 +8,8 @@ const NonFriendCard = ({ name, email, profile, id, update }) => {
 		axios
 			.post(
 				// "http://localhost:3000/friend/create",
-				"https://social-media-1sol.onrender.com/friend/create",
+				// "https://social-media-1sol.onrender.com/friend/create",
+				"https://social-media-application-5dap.vercel.app/friend/create",
 				{ friendId: id },
 				{
 					headers: {

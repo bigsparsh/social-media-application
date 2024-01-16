@@ -11,7 +11,8 @@ const UserProfile = () => {
 		axios
 			.post(
 				// "http://localhost:3000/user/profile",
-				"https://social-media-1sol.onrender.com/user/profile",
+				// "https://social-media-1sol.onrender.com/user/profile",
+				"https://social-media-application-5dap.vercel.app/user/profile",
 				{
 					userId: userId,
 				}
@@ -24,7 +25,8 @@ const UserProfile = () => {
 		axios
 			.post(
 				// "http://localhost:3000/feed/profile",
-				"https://social-media-1sol.onrender.com/feed/profile",
+				// "https://social-media-1sol.onrender.com/feed/profile",
+				"https://social-media-application-5dap.vercel.app/feed/profile",
 				{
 					userId: userId,
 				}

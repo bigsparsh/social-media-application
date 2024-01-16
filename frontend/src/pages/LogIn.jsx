@@ -17,7 +17,8 @@ const LogIn = () => {
 		axios
 			.post(
 				// "http://localhost:3000/user/tokenlogin",
-				"https://social-media-1sol.onrender.com/user/tokenlogin",
+				// "https://social-media-1sol.onrender.com/user/tokenlogin",
+				"https://social-media-application-5dap.vercel.app/user/tokenlogin",
 				{},
 				{
 					headers: {
@@ -68,7 +69,8 @@ const LogIn = () => {
 		axios
 			.post(
 				// "http://localhost:3000/user/login",
-				"https://social-media-1sol.onrender.com/user/login",
+				// "https://social-media-1sol.onrender.com/user/login",
+				"https://social-media-application-5dap.vercel.app/user/login",
 				userData
 			)
 			.then((res) => {

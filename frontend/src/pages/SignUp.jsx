@@ -41,8 +41,9 @@ const SignUp = () => {
 		formData.append("profilePath", image.current.files[0]);
 		axios
 			.post(
-				"http://localhost:3000/user/signup",
+				// "http://localhost:3000/user/signup",
 				// "https://social-media-1sol.onrender.com/user/signup",
+				"https://social-media-application-5dap.vercel.app/user/signup",
 				formData
 			)
 			.then((res) => {

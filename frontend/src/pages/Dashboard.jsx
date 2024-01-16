@@ -34,7 +34,8 @@ const Dashboard = () => {
 			axios
 				.post(
 					// "http://localhost:3000/user/tokenlogin",
-					"https://social-media-1sol.onrender.com/user/tokenlogin",
+					// "https://social-media-1sol.onrender.com/user/tokenlogin",
+					"https://social-media-application-5dap.vercel.app/user/tokenlogin",
 					null,
 					{
 						headers: {
@@ -51,7 +52,8 @@ const Dashboard = () => {
 			axios
 				.post(
 					// "http://localhost:3000/user/getallfriend",
-					"https://social-media-1sol.onrender.com/user/getallfriend",
+					// "https://social-media-1sol.onrender.com/user/getallfriend",
+					"https://social-media-application-5dap.vercel.app/user/getallfriend",
 
 					null,
 					{
@@ -73,7 +75,8 @@ const Dashboard = () => {
 			axios
 				.post(
 					// "http://localhost:3000/feed/getall",
-					"https://social-media-1sol.onrender.com/feed/getall",
+					// "https://social-media-1sol.onrender.com/feed/getall",
+					"https://social-media-application-5dap.vercel.app/feed/getall",
 					null,
 					{
 						headers: {

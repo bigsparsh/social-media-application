@@ -14,7 +14,8 @@ const UploadPost = ({ update }) => {
 		axios
 			.post(
 				// "http://localhost:3000/feed/create",
-				"https://social-media-1sol.onrender.com/feed/create",
+				// "https://social-media-1sol.onrender.com/feed/create",
+				"https://social-media-application-5dap.vercel.app/feed/create",
 				formData,
 				{
 					headers: {
